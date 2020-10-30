@@ -12,4 +12,9 @@ class CrashingActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun finish() {
+        super.finish()
+        overridePendingTransition(0, 0)
+    }
 }
